@@ -27,11 +27,29 @@ gcc src/ipv4_address_book.c -o ipv4_address_book
 ./ipv4_address_book
 ```
 ## **Example Input file (address_book.txt)
-
-
-
+Program loads initial entries from data/address_input.txt, each line containing an IPv4 address followed by an alias:
+```
+192.168.1.10 router
+10.0.0.5 server
+172.16.4.22 backup
+```
 ## **Example Program Out**
+```
+1) Add address
+2) Look up address
+3) Update address
+4) Delete address
+5) Display List
+6) Display Aliases for Location
+7) Save to file
+8) Quit
+Enter Option: 5
 
+192.168.1.10 router
+10.0.0.5 server
+172.16.4.22 backup
+Total node count: 3
+```
 ## **Data Structure Overview**
 **Linked List Node**
 Each entry contains: 
