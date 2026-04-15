@@ -10,11 +10,14 @@ A Java program that implements a fixed-capacity queue using a circular array wit
   - printList: prints all current queue elements
 
 ## How to Compile
+```
 javac ArrayQueue.java
+```
 
 ## How to Run
+```
 java ArrayQueue
-
+```
 ## Example Output
 ```
 Front element is: 19
@@ -25,7 +28,7 @@ Contents of the queue:
 ```
 ## Algorithmic Notes
 **Circular Array**
-- Instead of shifting elements after each dequeue, the front and rear pointers advance using modulo arithmetic (index +1) % capacity, allowing array to wrap around. 
+- Instead of shifting elements after each dequeue, the front and rear pointers advance using modulo arithmetic (index + 1) % capacity, allowing array to wrap around. 
 
 **Overflow and underflow**
 - Enqueue checks isFull() before inserting and exits if capacity is reached. Dequeue and peek check isEmpty() before operating and exits if the queue is empty.
