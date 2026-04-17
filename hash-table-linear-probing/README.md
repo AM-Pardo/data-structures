@@ -49,8 +49,20 @@ Index | Value
 Average number of probes = 2.625
 ```
 ## Algorithmic Notes
-Hash Function: key % size
+**Hash Function:** 
+Keys are mapped to indices using key % size.
 
-Linear Probing: On collision, sequentially checks (home +i) % size until an empty slot is found
+**Linear Probing:** 
+On collision, sequentially checks (home + i) % size until an empty slot is found.
 
-Probe Tracking: Each insertion records how many slots were checked, used to calculate average insertion efficiency 
+**Probe Tracking:**
+Each insertion records how many slots were checked, used to calculate average insertion efficiency.
+
+## Time Complexity
+- Insert, Search: O(1) average, O(n) worst case
+> Worst case occurs when the table is nearly full, resulting in long probe sequences. As the load factor approaches 1 the performance degrades.
+
+## Why This Project Matters
+- Implementation of a hash table structure built in Java without library dependencies
+- Demonstrates collision resolution using linear probing
+- Probe count tracking shows understanding of hash table efficiency 
