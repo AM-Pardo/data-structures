@@ -1,4 +1,4 @@
-# Data-structures
+# data-structures
 Collection of small, focused projects implementing data structures in C and Java. Demonstrating dynamic memory management, tree operations, linked lists, and sorting.
 
 ## Projects
